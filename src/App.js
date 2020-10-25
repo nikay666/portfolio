@@ -1,13 +1,19 @@
 import React from 'react';
 import './App.css';
-
+import { Button } from './components/Button';
+import Header from './modules/Header/Header';
+import {BrowserRouter as Router} from 'react-router-dom' 
+import { Welcome } from './Pages/Welcome';
 
 function App() {
-  const classes = useStyles() 
+
   return (
-    <div className="App">
-      <h1>Hello world</h1>
-    </div>
+    <Router>
+      <div className="App">
+      <Header />
+      <Welcome/>
+      </div>
+    </Router>
   );
 }
 
