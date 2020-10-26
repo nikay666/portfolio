@@ -1,9 +1,13 @@
 import React from 'react'
 import './Button.scss'
 
-const Button = ({children}) => {
+const Button = ({children, classes}) => {
+    const classNames = ['button']
+    classes && classNames.push(classes)
+    const className =  classNames.join(' ')
+
     return (
-        <button className="button">
+        <button className={className}>
             {children}
         </button>
     )

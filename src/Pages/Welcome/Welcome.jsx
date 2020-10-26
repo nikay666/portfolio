@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from '../../components/Button'
 import List from '../../components/List/List'
+import { ContactWindow } from '../../modules/ContactWindow'
 
 
 const items = [
@@ -21,6 +22,7 @@ const Welcome = () => {
                 <Button>Связаться со мной</Button>
             </div>
            </div>
+           <ContactWindow/>
            
         </section>
     )
