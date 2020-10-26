@@ -1,6 +1,5 @@
 import React from 'react';
-import './App.css';
-import { Button } from './components/Button';
+import './App.scss';
 import Header from './modules/Header/Header';
 import {BrowserRouter as Router} from 'react-router-dom' 
 import { Welcome } from './Pages/Welcome';

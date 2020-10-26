@@ -6,8 +6,9 @@
     top: 0;
     left: 0;
     right: 0;
-
+    padding: $lp;
     &__nav{
+        padding: 60px;
 
         &-list{
             display: flex;
@@ -19,11 +20,32 @@
 
         }
         &-link{
+            position: relative;
             font-style: normal;
             font-weight: 500;
             font-size: 18px;
             line-height: 21px;
             color: $white;
+            text-decoration: none;
+            transition: $transition;
+
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: -4px;
+                left: 0;
+                right: 0;
+                height: 0;
+                transition: $transition;
+                background-color: none;
+            }
+            &:hover{
+                &::before{
+                    height: 3px;
+                    background-color: $primary;
+                }
+            }
+
         }
     }
  

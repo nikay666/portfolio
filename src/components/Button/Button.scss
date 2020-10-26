@@ -1,0 +1,23 @@
+@import '../../var.scss';
+
+.button{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 140%;
+
+    color: $dark;
+    background-color: $white;
+    padding: 20px 60px;
+    border-radius: $br_button;
+    border: 1px  solid $dark;
+    box-shadow: 6px 6px 0px 0px $primary;
+    transition: $transition;
+    cursor: pointer;
+
+    &:hover{
+        color: $white;
+        background-color: $primary;
+        box-shadow: 6px 6px 0px 0px $primary-dark;
+    }
+}
