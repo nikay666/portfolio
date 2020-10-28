@@ -17,6 +17,7 @@ const categories = [
   {name: 'Многостраничные сайты', data: 'cites'},
   {name: 'WordPress', data: 'wordpress'},
   {name: 'Разное', data: 'other'},
+  
 ]
 
 function App() {

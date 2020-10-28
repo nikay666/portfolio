@@ -2,13 +2,13 @@
 
 .header{
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    padding: $lp;
+    // padding: 0 $lp-s;
     &__nav{
-        padding: 60px;
+        padding: $lp;
 
         &-list{
             display: flex;
