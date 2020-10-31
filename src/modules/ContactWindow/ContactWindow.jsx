@@ -16,7 +16,7 @@ const contactItems = [
 
 const ContactWindow = () => {
     return (
-        <div className="contact__window">
+        <address className="contact__window">
             {
                 contactItems.map((item, index) => (
                     <ContactItem 
@@ -29,7 +29,7 @@ const ContactWindow = () => {
                 ))
             }
             
-        </div>
+        </address>
     )
 }
 

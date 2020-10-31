@@ -1,15 +1,32 @@
 import React from 'react'
+import Card from '../../components/Card'
 import Categories from '../../components/Categories/Categories'
 
-const Works = ({title, id, categories}) => {
+
+const Works = ({title, id, categories, works}) => {
     return (
-        <section className="works" id={id} >
+        <section className="works content" id={id} >
             <h2 className="h2">{title}</h2>
             {
                 categories ? 
                 <Categories categories={categories}/>
                 : null
             }
+            <div className="content__items">
+               {
+                works.map((work, index) => (
+                    <Card
+                        key={index}
+                        url={work.url}
+                        href={work.href}
+                        title={work.title}
+                        link={work.link}
+                        text={work.text}
+                        tags={work.tags}
+                    />
+                ))
+                }
+            </div>
 
         </section>
     )

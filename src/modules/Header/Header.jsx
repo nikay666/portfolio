@@ -5,9 +5,9 @@ import './Header.scss'
 const Header = () => {
     const links = [
         {name: 'Главная', to: '/' }, 
-        {name: 'Работы', to: '#works' }, 
-        {name: 'Мой codopen', to: '#codopen' }, 
-        {name: 'Контакты', to: '#contact' }, 
+        {name: 'Работы', to: '/works' }, 
+        {name: 'Мой codopen', to: '/codopen' }, 
+        {name: 'Контакты', to: '/contact' }, 
     ]
     return (
         <header className="header">

@@ -17,7 +17,6 @@
     
         }
         &-item{
-
         }
         &-link{
             position: relative;
@@ -38,13 +37,16 @@
                 height: 0;
                 transition: $transition;
                 background-color: none;
+                
             }
+              
             &:hover{
                 &::before{
                     height: 3px;
                     background-color: $primary;
                 }
             }
+        
 
         }
     }

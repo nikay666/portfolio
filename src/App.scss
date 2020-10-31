@@ -51,6 +51,12 @@
     line-height: 140%;
     color: $white;
 }
+.h2{
+    margin: 40px  0;
+}
+.h3{
+ 
+}
 
 .contact__window{
     background-color: $white;
@@ -85,3 +91,13 @@
     padding: 10px  20px;
 }
 
+.content{
+
+
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10%;
+        margin-top: 50px;
+    }
+}
