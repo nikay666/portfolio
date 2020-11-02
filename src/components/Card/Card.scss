@@ -86,16 +86,3 @@
     }
 }
 
-.tags{
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-
-    .tag{
-        border-radius: $br;
-        border: 1px solid $dark;
-        padding: 5px 10px;
-        line-height: 140%;
-        cursor: pointer;
-    }
-}

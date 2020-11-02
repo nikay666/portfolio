@@ -1,4 +1,5 @@
 import React from 'react'
+import { TagsList } from '../TagsList'
 
 import './Card.scss'
 
@@ -26,14 +27,7 @@ const Card = ({url, title, href, link, text, tags }) => {
 
             <div className="card__wrap">
                 <h4 className="card__wrap-title">Технологии: </h4>
-                <ul className="tags">
-                    {tags.map(( tag, index) => (
-                        <li className="tag"
-                            key={index}
-                            data-tag={tag}
-                        >{tag}</li>
-                    ))}
-                </ul>
+               <TagsList  tags={tags} />
             </div>
 
         </div>
