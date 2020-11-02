@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from '../../components/Button'
 import Card from '../../components/Card'
 import Categories from '../../components/Categories/Categories'
 
@@ -27,7 +28,9 @@ const Works = ({title, id, categories, works}) => {
                 ))
                 }
             </div>
-
+            <div className='content__see-more'>
+                <Button>Посмотреть больше</Button>
+            </div>
         </section>
     )
 }

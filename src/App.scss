@@ -97,7 +97,13 @@
     &__items{
         display: flex;
         flex-wrap: wrap;
-        gap: 10%;
+        gap: 60px 10%;
         margin-top: 50px;
+    }
+
+    &__see-more{
+        margin: 60px;
+        display: flex;
+        justify-content: center;
     }
 }
