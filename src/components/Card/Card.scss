@@ -7,8 +7,14 @@
     overflow: hidden;
     box-shadow: 8px 8px 0px 0px $dark;
     background-color: $white;
-    text-align: left;
-    position: relative;
+    cursor: pointer;
+
+    &--link{
+        text-align: left;
+        position: relative;
+        color: $dark;
+        text-decoration: none;
+    }
 
     &__title{
         margin-bottom: 20px;
@@ -26,7 +32,6 @@
         }
     }
 
-
     &__back{
         opacity: 0;
         height: 0;
@@ -36,7 +41,6 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 30px 45px;
-   
 
         &-title{
             font-style: normal;
@@ -51,37 +55,8 @@
     
     }
 
-    .card__block{
-        display: flex;
-        flex-direction: column;
-
-        &-title{
-            font-style: normal;
-            font-weight: bold;
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-        &-text{
-            overflow: auto;
-            max-height: 110px;      
-        }
-        &-tags{
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-        &-tag{
-            border-radius: $br;
-            border: 1px solid $dark;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-    }
-  
-
     &:hover,  &:focus, &:active{
         box-shadow: 8px 8px 0px 0px $primary;
-        outline: auto;
  
         .card__back{
             opacity: 1;
@@ -93,4 +68,34 @@
         }
     }
 
+}
+
+.card__wrap{
+    display: flex;
+    flex-direction: column;
+
+    &-title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    &-text{
+        overflow: auto;
+        max-height: 110px;      
+    }
+}
+
+.tags{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    .tag{
+        border-radius: $br;
+        border: 1px solid $dark;
+        padding: 5px 10px;
+        line-height: 140%;
+        cursor: pointer;
+    }
 }
