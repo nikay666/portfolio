@@ -7,6 +7,21 @@
 @mixin main-wrap {
     padding: $lp; 
 }
+.h1{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 140%;
+    color: $white;
+}
+.h2{
+    margin: 40px  0;
+}
+.h3{
+ 
+}
+
 
 .welcome{
     display: flex;
@@ -33,23 +48,7 @@
             gap:30px;
             margin-top: 100px;
         }
-    }
-    
-}
-
-.h1{
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 140%;
-    color: $white;
-}
-.h2{
-    margin: 40px  0;
-}
-.h3{
- 
+    } 
 }
 
 .contact__window{
@@ -80,11 +79,6 @@
     }
 }
 
-.button.category{
-    box-shadow: 4px 4px 0px 0px $dark;
-    padding: 10px  20px;
-}
-
 .content{
     @include main-wrap();
 
@@ -103,5 +97,5 @@
 }
 
 .contact{
-    
-}
+
+} 
