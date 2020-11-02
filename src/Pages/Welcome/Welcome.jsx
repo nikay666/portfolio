@@ -17,7 +17,7 @@ const Welcome = () => {
            <div className="welcome__box">
             <h1 className="h1">Привет! Я frontend-разработчик.</h1>
             <List items={items}/>
-            <div className="container">
+            <div className="welcome__box-buttons">
                 <Button>Мои работы</Button>
                 <Button>Связаться со мной</Button>
             </div>

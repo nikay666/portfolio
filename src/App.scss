@@ -7,6 +7,7 @@
 @mixin main-wrap {
     padding: $lp; 
 }
+
 .welcome{
     display: flex;
     gap:100px;
@@ -26,21 +27,14 @@
             margin-top: 20px;
             margin-left: 20px;
         }
-        .container{
+        &-buttons{
+            display: flex;
+            width: 100%;
             gap:30px;
             margin-top: 100px;
         }
     }
     
-}
-
-.works{
-    @include main-wrap();
-}
-
-.container{
-    display: flex;
-    width: 100%;
 }
 
 .h1{
@@ -92,7 +86,7 @@
 }
 
 .content{
-
+    @include main-wrap();
 
     &__items{
         display: flex;
@@ -106,4 +100,8 @@
         display: flex;
         justify-content: center;
     }
+}
+
+.contact{
+    
 }

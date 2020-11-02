@@ -4,32 +4,48 @@ import Header from './modules/Header/Header';
 import {BrowserRouter as Router} from 'react-router-dom' 
 import { Welcome } from './Pages/Welcome';
 import Works from './Pages/Works/Works';
+import Contact from './Pages/Contact/Contact';
 
 const works = [
-  { url: 'https://cdn.iz.ru/sites/default/files/styles/900x506/public/news-2019-01/50045948_10157219683543254_1059769440687620096_n.jpg?itok=dZTg3ncI',
-   title: 'Название компани, сайта',
-   href:  'example.com',
-   link: 'example.com',
-   text: 'Многостраничный  сайт для отеля для котиков с  формой обратной связи.',
-   tags: [
-       'html',
-       'css',
-       'js'        
-   ]
+  { 
+    url: 'https://cdn.iz.ru/sites/default/files/styles/900x506/public/news-2019-01/50045948_10157219683543254_1059769440687620096_n.jpg?itok=dZTg3ncI',
+    title: 'Название компани, сайта',
+    href:  'example.com',
+    link: 'example.com',
+    text: 'Многостраничный  сайт для отеля для котиков с  формой обратной связи.',
+    tags: [
+        'html',
+        'css',
+        'js'        
+    ]
 },
-{ url: 'https://cs6.pikabu.ru/post_img/2014/07/24/0/1406147731_1467007999.jpg',
-title: 'kormru.ru',
-href:  'kormru.ru',
-link: 'http://kormru.ru/',
-text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit architecto, eaque, ut ab quam sed cumque voluptatem animi earum harum laboriosam enim deserunt aliquid possimus asperiores. Dicta placeat veritatis sapiente!Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit architecto, eaque, ut ab quam sed cumque voluptatem animi earum harum laboriosam enim deserunt aliquid possimus asperiores. Dicta placeat veritatis sapiente!',
-tags: [
-   'html',
-   'css',
-   'js'  ,
-   'wordpress',
-   'shop'       
-]
-}
+  { 
+    url: 'https://cs6.pikabu.ru/post_img/2014/07/24/0/1406147731_1467007999.jpg',
+    title: 'kormru.ru',
+    href:  'kormru.ru',
+    link: 'http://kormru.ru/',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit architecto, eaque, ut ab quam sed cumque voluptatem animi earum harum laboriosam enim deserunt aliquid possimus asperiores. Dicta placeat veritatis sapiente!Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit architecto, eaque, ut ab quam sed cumque voluptatem animi earum harum laboriosam enim deserunt aliquid possimus asperiores. Dicta placeat veritatis sapiente!',
+    tags: [
+      'html',
+      'css',
+      'js'  ,
+      'wordpress',
+      'shop'       
+    ]
+  },
+  { 
+    url: 'https://icdn.lenta.ru/images/2017/07/12/16/20170712161939103/detail_15b9eca8fd6e00746cfc42a472cbee2d.jpg',
+    title: 'something.ru',
+    href:  'something.ru',
+    link: 'http://something.ru/',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.  Reprehenderit architecto, eaque, ut ab quam sed cumque voluptatem animi earum harum laboriosam enim deserunt aliquid possimus asperiores. Dicta placeat veritatis sapiente!',
+    tags: [
+      'html',
+      'css',
+      'js',
+      'lending'       
+    ]
+  }
 ]
 
 
@@ -59,6 +75,7 @@ function App() {
         categories={categories}
         works={works}
         />
+        <Contact/>
 
        </main>
       </div>
