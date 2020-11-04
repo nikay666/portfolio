@@ -2,13 +2,7 @@ import React from 'react'
 import { HeaderLink } from '../../components/HeaderLink'
 import './Header.scss'
 
-const Header = () => {
-    const links = [
-        {name: 'Главная', to: '/' }, 
-        {name: 'Работы', to: '/works' }, 
-        {name: 'Мой codopen', to: '/codopen' }, 
-        {name: 'Контакты', to: '/contact' }, 
-    ]
+const Header = ({links}) => {
     return (
         <header className="header">
             <nav className="header__nav">
@@ -18,7 +12,8 @@ const Header = () => {
                                 <HeaderLink 
                                     key={index}
                                     to={obj.to}
-                                    name={obj.name}/>
+                                    name={obj.name}
+                                />
                             ))
                         }                    
                 </ul>

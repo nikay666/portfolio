@@ -6,6 +6,7 @@ import { Welcome } from './Pages/Welcome';
 import Works from './Pages/Works/Works';
 import Contact from './Pages/Contact/Contact';
 import { githubSVG, instagramSVG, telegramSVG } from './utilits';
+import Footer from './modules/Footer/Footer';
 
 const works = [
   { 
@@ -83,25 +84,30 @@ const categories = [
   
 ]
 
+const links = [
+  {name: 'Главная', to: '/' }, 
+  {name: 'Работы', to: '/works' }, 
+  {name: 'Мой codopen', to: '/codopen' }, 
+  {name: 'Контакты', to: '/contact' }, 
+]
+
 function App() {
 
   return (
     <Router>
       <div className="App">
-      <Header />
-       <main>
-       <Welcome contacts={contacts}/>
-       <Works 
-        id="works"
-        title="Мои работы"
-        categories={categories}
-        works={works}
-        />
-        <Contact contacts={contacts}/>
-
+        <Header links={links} />
+        <main>
+          <Welcome contacts={contacts}/>
+          <Works 
+            id="works"
+            title="Мои работы"
+            categories={categories}
+            works={works}
+            />
+          <Contact contacts={contacts}/>
        </main>
-      </div>
-      <div>
+       <Footer links={links} />
       </div>
     </Router>
   );

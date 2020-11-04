@@ -1,0 +1,45 @@
+@import  '../../var.scss';
+
+.footer{
+    width: 100%;
+    background-color: $dark;
+    padding-top: 30px;
+    padding-bottom: 30px ;
+
+    p,a{
+        color: $white;
+    }
+    &__top, &__bottom{
+        display: flex;
+        width: 100%;
+    }
+    &__bottom{
+        margin-top: 30px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    &__nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        &-link{
+           text-decoration: none;
+
+        }
+    }
+
+    .byLove{
+        font-size: 12px;
+        padding: 2px;
+    }
+    .sourseBy{
+        padding: 2px;
+        font-size: 10px;
+        color: $white;
+        opacity: 0.4;
+    }
+}
