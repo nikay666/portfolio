@@ -21,7 +21,9 @@
 .h3{
  
 }
-
+address{
+    font-style: normal;
+}
 
 .welcome{
     display: flex;
@@ -58,24 +60,8 @@
     padding: 30px 60px;
     box-shadow: 6px 6px 0px 0px $primary;
 
-    &-item{
+    .contact__item{
         width: 100%;
-        display: flex;
-        gap: 10px;
-        padding: 15px 0;
-
-        .title{
-            font-weight: bold;
-        }
-        .title, .data{
-            font-size: 16px;
-            line-height: 140%;
-            color: $dark;
-        }
-        .icon{
-            margin: 0 5px;
-        }
-      
     }
 }
 
@@ -97,5 +83,47 @@
 }
 
 .contact{
+    &__window, &__content{
+        .contact__item{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 0;
 
-} 
+            .title{
+                font-weight: bold;
+            }
+            .title, .data{
+                font-size: 16px;
+                line-height: 140%;
+                color: $dark;
+            }
+            .icon{
+                margin: 0 5px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: $white;
+
+        .contact__item{
+            width: 45%;
+            .icon{
+                svg{
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+            .title, .data{
+                font-size: 18px;
+            }
+        }
+        
+    }
+
+}

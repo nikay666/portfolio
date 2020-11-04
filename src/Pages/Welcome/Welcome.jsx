@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '../../components/Button'
 import List from '../../components/List/List'
-import { ContactWindow } from '../../modules/ContactWindow'
+import { ContactSection } from '../../modules/ContactSection'
 
 
 const items = [
@@ -11,7 +11,7 @@ const items = [
     'Wordpress(лендинги, многостраничные сайты, блоги, интернет-магазины)'
 ]
 
-const Welcome = () => {
+const Welcome = ({contacts}) => {
     return (
         <section className="welcome">
            <div className="welcome__box">
@@ -22,7 +22,7 @@ const Welcome = () => {
                 <Button>Связаться со мной</Button>
             </div>
            </div>
-           <ContactWindow/>
+           <ContactSection contacts={contacts} window/>
            
         </section>
     )

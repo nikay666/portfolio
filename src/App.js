@@ -5,6 +5,7 @@ import {BrowserRouter as Router} from 'react-router-dom'
 import { Welcome } from './Pages/Welcome';
 import Works from './Pages/Works/Works';
 import Contact from './Pages/Contact/Contact';
+import { githubSVG, instagramSVG, telegramSVG } from './utilits';
 
 const works = [
   { 
@@ -49,9 +50,30 @@ const works = [
 ]
 
 
-// const codopen = [
-//   {link: ''}
-// ]
+const codopen = [
+  {link: 
+    `<p class="codepen" data-height="254" data-theme-id="dark" data-default-tab="result" data-user="nikay666" data-slug-hash="GRqWPBV" style="height: 254px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Test">
+    <span>See the Pen <a href="https://codepen.io/nikay666/pen/GRqWPBV">
+    Test</a> by nikay666 (<a href="https://codepen.io/nikay666">@nikay666</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>`
+  }
+]
+
+const contacts = [
+  {type:'email', data: 'nikay.yakubova@gmail.com', href: 'mailto:nikay.yakubova@gmail.com',},
+  {type: 'телефон', data: '8(999)8094720', href: 'tel:+79998094720'},
+  {type: 'fl.ru', data: 'fl.ru/my_account', href: 'fl.ru/my_account'},
+  {type: 'Соц. сети', links: [
+    {href: 'https://t.me/nikay666', data: telegramSVG},
+    {href: 'https://www.instagram.com/', data: instagramSVG },
+    {href: 'https://github.com/nikay666', data: githubSVG},
+]}
+]
+
+
+
 const categories = [
   {name: 'Все', data: 'all'},
   {name: 'Лендинги', data: 'lending'},
@@ -68,14 +90,14 @@ function App() {
       <div className="App">
       <Header />
        <main>
-       <Welcome/>
+       <Welcome contacts={contacts}/>
        <Works 
         id="works"
         title="Мои работы"
         categories={categories}
         works={works}
         />
-        <Contact/>
+        <Contact contacts={contacts}/>
 
        </main>
       </div>
