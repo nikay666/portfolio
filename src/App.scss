@@ -5,7 +5,20 @@
 }
 
 @mixin main-wrap {
-    padding: $lp; 
+    padding: $xl; 
+
+    @media(max-width: 1140px) {
+        padding: $lg; 
+    }
+    @media(max-width: 960px) {
+        padding: $md; 
+    }
+    @media(max-width: 768px) {
+        padding: $sm; 
+    }
+    @media(max-width: 576px) {
+        padding: $xsm; 
+    }
 }
 .h1{
     font-family: Ubuntu;
