@@ -6,10 +6,11 @@
     top: 0;
     left: 0;
     right: 0;
+    display: flex;
+    justify-content: flex-end;
 
     &__nav{
         padding: $xl;
-
 
         &-list{
             display: flex;
@@ -51,5 +52,73 @@
 
         }
     }
+    .btn-burger{
+        $margin: 8px;
+        $height:  5px;
+
+        width: 4em;
+        height: 4em;
+        cursor: pointer;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        background-color: transparent;
+        border: none;
+        transition: $transition;
+
+        &::before, &::after, &__line{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background-color: $primary;
+            margin-bottom: 5px;
+            border-radius: $br;
+        }
+        &::before{
+            top: 0;
+        }
+        &::after{
+            top: $margin + $height;
+        }
+        &__line{
+            top:( $margin + $height) * 2;
+        }
+
+        &.active{
+            &::before{
+                top: 50%;
+                transform: rotate(45deg);
+            }
+            &::after{
+                top: 50%;
+                transform: rotate(-45deg);
+            }
+            & .btn-burger__line{
+                opacity: 0; 
+                visibility: hidden;
+            }
+        }
+    }
+
+    
+
+    @media(max-width: 768px) {
+       &__nav{
+        opacity: 0;
+        visibility: hidden;
+       }
+      
+
+       .btn-burger{
+        opacity: 1;
+        visibility: visible;
+
+       }
+    }
  
+
 }
