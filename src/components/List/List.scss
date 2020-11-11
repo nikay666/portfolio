@@ -1,0 +1,12 @@
+@import '../../var.scss';
+
+.list{
+   
+    list-style-type: '>  ';
+
+    &__item{
+        color: $white;
+        font-size: 18px;
+        padding: 10px 0;
+    }
+}

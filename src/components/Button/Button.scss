@@ -1,0 +1,34 @@
+@import '../../var.scss';
+
+.button{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 140%;
+
+    color: $dark;
+    background-color: $white;
+    padding: 20px 60px;
+    border-radius: $br;
+    border: 1px  solid $dark;
+    box-shadow: 6px 6px 0px 0px $primary;
+    transition: $transition;
+    cursor: pointer;
+    white-space: nowrap;
+
+    &:hover{
+        color: $white;
+        background-color: $primary;
+        box-shadow: 6px 6px 0px 0px $primary-dark;
+    }
+
+    &.category{
+        box-shadow: 4px 4px 0px 0px $dark;
+        padding: 10px  20px;
+    }
+
+    @media(max-width: 1140px) {
+        padding: 15px 35px;
+    }
+
+}

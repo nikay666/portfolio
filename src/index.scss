@@ -1,3 +1,5 @@
+@import './var.scss';
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -8,8 +10,14 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
-
+*{
+  font-family: Ubuntu;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+ul{
+  list-style: none;
 }
