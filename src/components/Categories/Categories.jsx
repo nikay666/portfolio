@@ -8,7 +8,7 @@ const Categories = ({categories}) => {
 
            {
                 categories.map((category, index) => (
-                <li   key={index}  className="category__item">
+                <li   key={index}  className="categories__item">
                     <Button 
                         classes="category" 
                         id={category.data}
@@ -16,6 +16,7 @@ const Categories = ({categories}) => {
                 </li>
                ))
            }
+           <Button  classes="category filters" >Фильтры</Button> 
         </ul>
     )
 }
