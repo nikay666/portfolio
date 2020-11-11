@@ -26,7 +26,7 @@ const Header = ({links}) => {
                         }                    
                 </ul>
             </nav>
-            <button className='btn-burger active'><span className='btn-burger__line'></span></button>
+            <button className='btn-burger'><span className='btn-burger__line'></span></button>
         </header>
     )
 }
