@@ -2,6 +2,14 @@ import React from 'react'
 import { HeaderLink } from '../../components/HeaderLink'
 import './Header.scss'
 
+
+
+/*  to disable scrolling (class overflow-hidden)
+body{
+    overflow-y:hidden;
+} 
+*/
+
 const Header = ({links}) => {
     return (
         <header className="header">
