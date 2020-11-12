@@ -4,11 +4,14 @@ import './Categories.scss'
 
 const Categories = ({categories}) => {
     return (
-        <ul className='categories'>
+        <>
+         <Button  classes="category filters">Фильтры</Button> 
+        <ul className='categories active '>
+            <span className='triangle'></span>
 
            {
                 categories.map((category, index) => (
-                <li   key={index}  className="categories__item">
+                <li key={index}  className="categories__item ">
                     <Button 
                         classes="category" 
                         id={category.data}
@@ -16,8 +19,9 @@ const Categories = ({categories}) => {
                 </li>
                ))
            }
-           <Button  classes="category filters" >Фильтры</Button> 
+         
         </ul>
+        </>
     )
 }
 
