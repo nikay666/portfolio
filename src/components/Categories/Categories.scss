@@ -1,5 +1,7 @@
+@import '../../var.scss';
 .categories{
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 
     &__item{
@@ -7,12 +9,9 @@
         visibility: visible;
         position: relative;
     }
-    .filters{
-        opacity: 0;
-        visibility: hidden;
-        position: absolute;
-        width: 100%;
-        left:  -1000;
+
+    .triangle{  
+        display: none;
     }
 
     @media(max-width: 768px) {
@@ -22,10 +21,49 @@
             position: absolute;
             left:  -1000;
         }
-        .filters{
-            opacity: 1;
-            visibility: visible;
+
+        &.active  {
             position: relative;
+            flex-direction: column;
+            margin-top: 25px;
+            padding: 40px 20px;
+
+            z-index: 999;
+            background-color: $white;
+            border: 1px solid  $dark;
+            border-radius: $br;
+
+            .triangle{  
+                display: block;
+                position: absolute;
+                top: -14px;
+                left: 50%;
+
+                svg{
+                    width: 14px;
+                    height: 10px;
+                }
+            }
+            
+            .categories__item{
+                opacity: 1;
+                visibility: visible;
+                position: relative;
+            }
         }
+    }
+}
+.filters{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    left:  -1000;
+
+    @media(max-width: 768px) {
+        opacity: 1;
+        visibility: visible;
+        position: relative;
+    
     }
 }
