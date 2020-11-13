@@ -10,6 +10,10 @@
         position: relative;
     }
 
+    .triangle{  
+        display: none;
+    }
+
     @media(max-width: 768px) {
         &__item{
             opacity: 0;
@@ -17,6 +21,7 @@
             position: absolute;
             left:  -1000;
         }
+
         &.active  {
             position: relative;
             flex-direction: column;
@@ -29,10 +34,17 @@
             border-radius: $br;
 
             .triangle{  
-    
+                display: block;
+                position: absolute;
+                top: -14px;
+                left: 50%;
+
+                svg{
+                    width: 14px;
+                    height: 10px;
+                }
             }
             
-
             .categories__item{
                 opacity: 1;
                 visibility: visible;

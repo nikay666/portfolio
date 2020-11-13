@@ -1,13 +1,15 @@
 import React from 'react'
+import { triangleDecorSVG } from '../../utilits'
 import { Button } from '../Button'
 import './Categories.scss'
+
 
 const Categories = ({categories}) => {
     return (
         <>
          <Button  classes="category filters">Фильтры</Button> 
         <ul className='categories active '>
-            <span className='triangle'></span>
+            <div className='triangle'>{triangleDecorSVG}</div>
 
            {
                 categories.map((category, index) => (
