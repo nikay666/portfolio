@@ -5,13 +5,13 @@ import {BrowserRouter as Router} from 'react-router-dom'
 import { Welcome } from './Pages/Welcome';
 import Works from './Pages/Works/Works';
 import Contact from './Pages/Contact/Contact';
-import { githubSVG, instagramSVG, telegramSVG } from './utilits';
+import { githubSVG, instagramSVG, telegramSVG } from './utilities';
 import Footer from './modules/Footer/Footer';
 
 const works = [
   { 
     url: 'https://cdn.iz.ru/sites/default/files/styles/900x506/public/news-2019-01/50045948_10157219683543254_1059769440687620096_n.jpg?itok=dZTg3ncI',
-    title: 'Название компани, сайта',
+    title: 'Название компании, сайта',
     href:  'example.com',
     link: 'example.com',
     text: 'Многостраничный  сайт для отеля для котиков с  формой обратной связи.',
