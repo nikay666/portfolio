@@ -8,6 +8,7 @@
         opacity: 1;
         visibility: visible;
         position: relative;
+
     }
 
     .triangle{  
@@ -15,40 +16,58 @@
     }
 
     @media(max-width: 768px) {
-        &__item{
+        position: absolute;
+        top: -10px;
+        flex-direction: column;
+        margin-top: 25px;
+        padding: 40px 20px;
+        background-color: $white;
+        border: 1px solid  $dark;
+        border-radius: $br;
+        transition: $transition-short;
+
+        visibility: hidden;
+        opacity: 0;
+
+
+        .triangle{  
+            display: block;
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transition: $transition-short;
+
             opacity: 0;
             visibility: hidden;
-            position: absolute;
-            left:  -1000;
+
+            svg{
+                width: 14px;
+                height: 10px;
+            }
+        }
+        
+        &__item{
+            transition: $transition-short;
+
+            opacity: 0;
+            visibility: hidden;
         }
 
         &.active  {
+            top: 0;
             position: relative;
-            flex-direction: column;
-            margin-top: 25px;
-            padding: 40px 20px;
-
+            visibility: visible;
+            opacity: 1;
             z-index: 999;
-            background-color: $white;
-            border: 1px solid  $dark;
-            border-radius: $br;
 
             .triangle{  
-                display: block;
-                position: absolute;
-                top: -14px;
-                left: 50%;
-
-                svg{
-                    width: 14px;
-                    height: 10px;
-                }
+                visibility: visible;
+                opacity: 1;
             }
             
             .categories__item{
                 opacity: 1;
                 visibility: visible;
-                position: relative;
             }
         }
     }
@@ -57,11 +76,11 @@
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    width: 100%;
     left:  -1000;
 
     @media(max-width: 768px) {
         opacity: 1;
+        width: 100%;
         visibility: visible;
         position: relative;
     
