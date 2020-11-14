@@ -1,5 +1,5 @@
 import React from 'react'
-import { triangleDecorSVG } from '../../utilits'
+import { triangleDecorSVG } from '../../utilities'
 import { Button } from '../Button'
 import './Categories.scss'
 
