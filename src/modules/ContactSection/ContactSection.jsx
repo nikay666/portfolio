@@ -1,5 +1,6 @@
 import React from 'react'
 import ContactItem from '../../components/ContactItem/ContactItem'
+import ContactSectionLoader from './ContactSectionLoader'
 
 const toFirstUpperCase = (string) =>  {
     return string[0].toUpperCase() + string.substring(1)
@@ -14,11 +15,11 @@ const ContactSection = ({contacts, window}) => {
             {
                 contacts.map((item, index) => (
                     <ContactItem 
-                        key={index}
-                        title={toFirstUpperCase(item.type)} 
-                        data={item.data}
-                        href={item.href}      
-                        links={item.links}
+                    key={index}
+                    title={toFirstUpperCase(item.type)} 
+                    data={item.data}
+                    href={item.href}      
+                    links={item.links}
                     />
                 ))
             }
