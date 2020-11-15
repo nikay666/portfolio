@@ -1,6 +1,7 @@
 import React from 'react'
 
 const ContactItem = ({title, data, href, links}) => {
+
     return (
         <div className="contact__item">
             <span className="title">{title}: </span>
@@ -13,7 +14,7 @@ const ContactItem = ({title, data, href, links}) => {
                         className="icon"
                         key={index} 
                         href={link.href}
-                    >{link.data}</a>
+                    ><img src={link.data}/></a>
                 ))  
                 : <a 
                     target="_blank"
@@ -21,8 +22,6 @@ const ContactItem = ({title, data, href, links}) => {
                     className="data" 
                     href={href}
                 >{data}</a>
-                
-                
             }
         </div>
     )

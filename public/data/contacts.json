@@ -1,0 +1,10 @@
+[
+    {"type":"email", "data": "nikay.yakubova@gmail.com", "href": "mailto:nikay.yakubova@gmail.com"},
+    {"type": "телефон", "data": "8(999)8094720", "href": "tel:+79998094720"},
+    {"type": "fl.ru", "data": "fl.ru/my_account", "href": "fl.ru/my_account"},
+    {"type": "Соц. сети", "links": [
+      {"href": "https://t.me/nikay666", "data": "/assets/icon/github.svg"},
+      {"href": "https://www.instagram.com/", "data": "/assets/icon/instagram.svg" },
+      {"href": "https://github.com/nikay666", "data": "/assets/icon/telegram.svg"}
+  ]}
+  ]

@@ -2,6 +2,8 @@ import React from 'react'
 import { Button } from '../../components/Button'
 import List from '../../components/List/List'
 import { ContactSection } from '../../modules/ContactSection'
+import ContactSectionLoader from '../../modules/ContactSection/ContactSectionLoader'
+
 
 
 const items = [
@@ -19,10 +21,9 @@ const Welcome = ({contacts}) => {
             <List items={items}/>
             <div className="welcome__box-buttons">
                 <Button>Мои работы</Button>
-                <Button>Связаться со мной</Button>
             </div>
            </div>
-           <ContactSection contacts={contacts} window/>
+            <ContactSection contacts={contacts} window/>
            
         </section>
     )
