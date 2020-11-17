@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { TagsList } from '../TagsList'
 
 import './Card.scss'
@@ -6,7 +7,7 @@ import './Card.scss'
 const Card = ({url, title, href, link, text, tags }) => {
 
     return (
-        <a href={href} className='card card--link' >
+        <Link to={href} className='card card--link' >
             
             <div className="card__font">
                 <img className="card__font-img" src={url} alt={title}/>
@@ -31,7 +32,7 @@ const Card = ({url, title, href, link, text, tags }) => {
             </div>
 
         </div>
-        </a>
+        </Link>
     )
 }
 
