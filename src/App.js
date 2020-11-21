@@ -6,18 +6,21 @@ import { Welcome } from './Pages/Welcome';
 import Works from './Pages/Works/Works';
 import Contact from './Pages/Contact/Contact';
 import Footer from './modules/Footer/Footer';
-import {links, categories, urlWorks, urlContacts, getResponse} from  './utilities'
+import {links, categories, urlWorks, urlContacts, getResponse, urlCodopen} from  './utilities'
 
 
 function App() {
   const [works, setWorks] =  useState([])  
   const  [contacts, setContacts]  = useState([])
-  //codopen
+  const [codopen, setCodopen] = useState([])
 
   useEffect(() =>  {
     getResponse(urlWorks, setWorks)
     getResponse(urlContacts, setContacts)
+    getResponse(urlCodopen, setCodopen)
   }, [])
+
+  console.log('codopen', codopen)
 
   return (
     <Router>
@@ -35,6 +38,7 @@ function App() {
             />  : 
             null
           }
+          {/* Render Codopen */}
         
           <Contact contacts={contacts}/>
        </main>
