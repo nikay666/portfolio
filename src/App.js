@@ -7,6 +7,7 @@ import Works from './Pages/Works/Works';
 import Contact from './Pages/Contact/Contact';
 import Footer from './modules/Footer/Footer';
 import {links, categories, urlWorks, urlContacts, getResponse, urlCodopen} from  './utilities'
+import Codopens from './Pages/Codopens/Codopens';
 
 
 function App() {
@@ -38,7 +39,14 @@ function App() {
             />  : 
             null
           }
-          {/* Render Codopen */}
+          {
+            codopen.length ?  
+            <Codopens
+              title='Мой Codopen'
+              id="codopen"
+              codopens={codopen}
+            /> :  null
+          }
         
           <Contact contacts={contacts}/>
        </main>
