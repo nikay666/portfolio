@@ -17,6 +17,7 @@ export const links = [
 
 export const  urlWorks = '/data/works.json'
 export const urlContacts = '/data/contacts.json'
+export const  urlCodopen = '/data/codopen.json'
 
 export const checkForError = response => {
   if (!response.ok) throw Error(response.statusText)
