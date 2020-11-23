@@ -2,9 +2,6 @@ import React from 'react'
 import { Button } from '../../components/Button'
 import List from '../../components/List/List'
 import { ContactSection } from '../../modules/ContactSection'
-import ContactSectionLoader from '../../modules/ContactSection/ContactSectionLoader'
-
-
 
 const items = [
     'HTML5, CSS3/SCSS',

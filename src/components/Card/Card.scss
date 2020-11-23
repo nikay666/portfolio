@@ -9,6 +9,10 @@
     background-color: $white;
     cursor: pointer;
 
+    iframe{
+        height: 100%;
+    }
+
     &--link{
         text-align: left;
         position: relative;

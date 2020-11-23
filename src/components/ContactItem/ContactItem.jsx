@@ -14,7 +14,7 @@ const ContactItem = ({title, data, href, links}) => {
                         className="icon"
                         key={index} 
                         href={link.href}
-                    ><img src={link.data}/></a>
+                    ><img src={link.data} alt={title}/></a>
                 ))  
                 : <a 
                     target="_blank"

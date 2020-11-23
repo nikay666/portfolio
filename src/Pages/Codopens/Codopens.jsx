@@ -3,7 +3,6 @@ import { Button } from '../../components/Button'
 import Iframe from './Iframe'
 
 const Codopens = ({id, title, codopens}) => {
-    console.log(codopens)
     return (
         <section className="works content" id={id} >
             <h2 className="h2">{title}</h2>
@@ -11,11 +10,7 @@ const Codopens = ({id, title, codopens}) => {
             <div className="content__items">
                 {
                 codopens.map((codopen, index) => (
-                   <div key={index}>
-                       <Iframe  iframe={codopen.iframe} />
-                   </div>
-
-                   
+                       <Iframe key={index} classes="card" iframe={codopen.iframe} />  
                 ))
                 }
             </div>

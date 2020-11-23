@@ -21,8 +21,6 @@ function App() {
     getResponse(urlCodopen, setCodopen)
   }, [])
 
-  console.log('codopen', codopen)
-
   return (
     <Router>
       <div className="App">
