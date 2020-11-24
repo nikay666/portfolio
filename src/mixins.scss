@@ -30,3 +30,8 @@
     transform: translate(20px, 0);
     animation: fromLeft 1.5s ease;
 }
+
+@mixin animationToUp{
+    transform: translate(0, -20px);
+    animation: toUp 1.5s ease;
+} 

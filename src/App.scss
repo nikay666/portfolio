@@ -29,6 +29,25 @@ address{
     font-style: normal;
 }
 
+.contact__window{
+    background-color: $white;
+    border-radius: $br;
+    border: 1px solid $dark;
+    padding: 30px 60px;
+    box-shadow: 6px 6px 0px 0px $primary;
+    display: flex;
+    flex-wrap: wrap;
+
+    min-width: 464px;
+    min-height: 276px;
+
+    @include animationFromRight;
+
+    .contact__item{
+        width: 100%;
+    }
+}
+
 .welcome{
     display: flex;
     gap:100px;
@@ -63,8 +82,10 @@ address{
     @media(max-width: 1140px){
         flex-wrap: wrap;
         gap: 0  0;
+
         &__box{
             margin-top: 15%;
+            @include animationToUp;
             &-buttons{
                 margin-top: 25px;
             }
@@ -74,6 +95,7 @@ address{
             width: 100%;
        
             gap: 15px;
+            @include animationToUp;
          
             .contact__item{
                 width: 48%;
@@ -82,6 +104,9 @@ address{
     }
     @media(max-width: 768px){
         .contact__window{
+            min-width: auto;
+            min-height: auto;
+
             gap: 0;
             .contact__item{
                 width: 100%;
@@ -108,25 +133,6 @@ address{
         }
     }
 
-}
-
-.contact__window{
-    background-color: $white;
-    border-radius: $br;
-    border: 1px solid $dark;
-    padding: 30px 60px;
-    box-shadow: 6px 6px 0px 0px $primary;
-    display: flex;
-    flex-wrap: wrap;
-
-    min-width: 464px;
-    min-height: 276px;
-
-    @include animationFromRight;
-
-    .contact__item{
-        width: 100%;
-    }
 }
 
 .content{

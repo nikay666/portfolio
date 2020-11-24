@@ -15,3 +15,12 @@
         transform: translate(0, 0);
     }
 }
+
+@keyframes toUp{
+    to{
+        transform: translate(0, -20px);
+    }
+    from{
+        transform: translate(0, 0);
+    }
+}
