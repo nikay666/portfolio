@@ -45,8 +45,12 @@ function App() {
               codopens={codopen}
             /> :  null
           }
-        
+        {
+          contacts.length ? 
           <Contact contacts={contacts}/>
+          : null
+        }
+         
        </main>
        <Footer links={links} />
       </div>

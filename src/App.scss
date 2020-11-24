@@ -46,6 +46,8 @@ address{
         flex-wrap: wrap;
         align-items: baseline;
 
+        @include animationFromLeft;
+
         .list{
             margin-top: 20px;
             margin-left: 20px;
@@ -70,6 +72,7 @@ address{
         .contact__window{
             padding: 15px 35px;
             width: 100%;
+       
             gap: 15px;
          
             .contact__item{
@@ -115,6 +118,11 @@ address{
     box-shadow: 6px 6px 0px 0px $primary;
     display: flex;
     flex-wrap: wrap;
+
+    min-width: 464px;
+    min-height: 276px;
+
+    @include animationFromRight;
 
     .contact__item{
         width: 100%;

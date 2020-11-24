@@ -1,3 +1,5 @@
+@import './animations.scss';
+
 @mixin main-wrap {
     padding: $xl; 
 
@@ -17,4 +19,14 @@
     @media(max-width: 576px) {
         padding: $xsm; 
     }
+}
+
+@mixin animationFromRight{
+    animation: fromRight 1.5s ease;
+    transform: translate(-20px, 0);
+}
+
+@mixin animationFromLeft {
+    transform: translate(20px, 0);
+    animation: fromLeft 1.5s ease;
 }

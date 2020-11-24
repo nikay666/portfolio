@@ -1,0 +1,17 @@
+
+@keyframes fromRight{
+    to{
+        transform: translate(-20px, 0);
+    }
+    from{
+        transform: translate(0, 0);
+    }
+}
+@keyframes fromLeft{
+    to{
+        transform: translate(20px, 0);
+    }
+    from{
+        transform: translate(0, 0);
+    }
+}
