@@ -1,5 +1,10 @@
 import React from 'react'
 
+export const setAnimationFor = (el) => {
+  const fromTopPage  = el.getBoundingClientRect()
+    console.log(fromTopPage)
+}
+
 export const categories = [
     {name: 'Все', data: 'all'},
     {name: 'Лендинги', data: 'lending'},
