@@ -15,6 +15,7 @@ const Works = ({title, id, categories, works}) => {
     useEffect(()  => { 
         setAnimationFor(blockTitle.current)
         //TODO: итерируемые компоненты анимировать внутри  компонента
+        //TEST
         
     }, [])
 
