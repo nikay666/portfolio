@@ -14,17 +14,17 @@ const Works = ({title, id, categories, works}) => {
 
     useEffect(()  => { 
         setAnimationFor(blockTitle.current)
-        setAnimationFor(blockCategories.current)
-        // setAnimationFor(blockCard.current) TODO: как получить доступ к итерируемым элементам (DOM)
+        //TODO: итерируемые компоненты анимировать внутри  компонента
         
     }, [])
 
+
     return (
-        <section ref={blockTitle} className="works content" id={id} >
-            <h2 className="h2">{title}</h2>
+        <section className="works content" id={id} >
+            <h2 ref={blockTitle} className="h2">{title}</h2>
             {
                 categories ? 
-                <Categories ref={blockCategories} categories={categories}/>
+                <Categories startAnimations={blockCategories} categories={categories}/>
                 : null
             }
             <div className="content__items">

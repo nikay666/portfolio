@@ -2,7 +2,7 @@ import React from 'react'
 
 export const setAnimationFor = (el) => {
   const fromTopPage  = el.getBoundingClientRect()
-    console.log(fromTopPage)
+  console.log(fromTopPage)
 }
 
 export const categories = [
